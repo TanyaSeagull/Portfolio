@@ -1,0 +1,14 @@
+.about {
+  padding: 100px 0;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}

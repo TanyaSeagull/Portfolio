@@ -1,0 +1,172 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white);
+  z-index: 1000;
+  transition: var(--transition);
+  padding: 1rem 0;
+}
+
+.header.scrolled {
+  box-shadow: var(--shadow);
+  padding: 0.5rem 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Логотип */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  z-index: 1001;
+}
+
+.logo-text {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.logo-dot {
+  color: var(--primary);
+}
+
+/* Десктопная навигация */
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 0;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Кнопка меню */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 24px;
+  position: relative;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: var(--text);
+  border-radius: 3px;
+  transition: var(--transition);
+  transform-origin: center;
+}
+
+.menu-toggle span:nth-child(1) { top: 0; }
+.menu-toggle span:nth-child(2) { top: 10px; }
+.menu-toggle span:nth-child(3) { top: 20px; }
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
+}
+
+/* Мобильное меню */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--white);
+  padding-top: 80px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+.mobile-nav-list {
+  list-style: none;
+  padding: 2rem;
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 1rem 0;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--light);
+  transition: var(--transition);
+}
+
+.mobile-nav-link:hover {
+  color: var(--primary);
+  padding-left: 1rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  .mobile-menu {
+    display: block;
+  }
+}

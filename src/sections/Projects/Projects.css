@@ -1,0 +1,11 @@
+.projects {
+  padding: 100px 0;
+  background: var(--light);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-light);
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+}
