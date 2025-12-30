@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
 import './Header.css'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
-  // Эффект для изменения хедера при скролле
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
@@ -15,13 +15,11 @@ function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Закрытие меню при клике на ссылку
   const handleNavClick = () => {
     setIsMenuOpen(false)
   }
 
   const navItems = [
-    { label: 'Главная', href: '#hero' },
     { label: 'Обо мне', href: '#about' },
     { label: 'Проекты', href: '#projects' },
     { label: 'Навыки', href: '#skills' },
@@ -33,7 +31,7 @@ function Header() {
       <div className="container">
         <nav className="nav">
           {/* Логотип */}
-          <a href="#hero" className="logo" onClick={handleNavClick}>
+          <a href="#" className="logo" onClick={handleNavClick}>
             <span className="logo-text">Portfolio</span>
             <span className="logo-dot">.</span>
           </a>
@@ -53,20 +51,27 @@ function Header() {
             ))}
           </ul>
 
-          {/* Кнопка меню для мобильных */}
+          {/* Кнопка меню с иконками */}
           <button
-            className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
+            className="menu-toggle"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Меню"
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
           </button>
 
           {/* Мобильное меню */}
           <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
             <ul className="mobile-nav-list">
+              <li>
+                <a 
+                  href="#" 
+                  className="mobile-nav-link"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  На главную
+                </a>
+              </li>
               {navItems.map((item) => (
                 <li key={item.label}>
                   <a 

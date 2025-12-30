@@ -1,11 +1,28 @@
 .projects {
-  padding: 100px 0;
-  background: var(--light);
+  padding: 120px 0;
+  background: var(--bg-light);
+  position: relative;
 }
 
-.section-subtitle {
+.section-header {
   text-align: center;
-  color: var(--text-light);
-  margin-top: -2rem;
   margin-bottom: 3rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.projects-footer {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }

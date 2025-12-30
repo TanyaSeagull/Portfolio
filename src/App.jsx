@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from './components/Header/Header'
-import Hero from './sections/Hero/Hero'
 import About from './sections/About/About'
 import Projects from './sections/Projects/Projects'
 import Skills from './sections/Skills/Skills'
@@ -12,7 +11,6 @@ function App() {
     <>
       <Header />
       <main>
-        <Hero />
         <About />
         <Projects />
         <Skills />
