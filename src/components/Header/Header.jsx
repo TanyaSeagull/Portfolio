@@ -21,6 +21,7 @@ function Header() {
 
   const navItems = [
     { label: 'About me', href: '#about' },
+    { label: 'Education', href: '#education' },
     { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#projects' },
     { label: 'Contacts', href: '#contact' }
@@ -55,7 +56,7 @@ function Header() {
           <button
             className="menu-toggle"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Меню"
+            aria-label="Menu"
           >
             {isMenuOpen ? <FaTimes /> : <FaBars />}
           </button>

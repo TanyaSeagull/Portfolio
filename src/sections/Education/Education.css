@@ -1,0 +1,148 @@
+.education__wrap {
+  margin-bottom: 20px;
+  padding: 30px 30px 50px;
+  color: var(--text);
+  background: var(--bg-white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Стили для планшета */
+@media (min-width: 768px) {
+  .education__wrap {
+    margin-bottom: 0;
+    padding: 40px 50px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
+  }
+}
+
+/* Стили для десктопа */
+@media (min-width: 1024px) {
+  .education__wrap {
+    column-gap: 50px;
+  }
+}
+
+/* Заголовки групп */
+.education__subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(126, 109, 246, 0.1);
+}
+
+/* Список */
+.education__list {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .education__list {
+    margin-bottom: 0;
+  }
+}
+
+/* Элемент списка */
+.education__item {
+  display: flex;
+  align-items: flex-start;
+  margin: 12px 0;
+  padding: 12px 16px;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--bg-light);
+  border-radius: 8px;
+  border-left: 4px solid var(--primary);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.education__item:hover {
+  background: rgba(126, 109, 246, 0.05);
+  transform: translateX(5px);
+  border-left-color: var(--primary-dark);
+}
+
+.education__item:last-child {
+  margin-bottom: 0;
+}
+
+/* Маркер */
+.education__item::before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin-right: 12px;
+  margin-top: 8px;
+  background-color: var(--primary);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+/* Контейнер для каждого списка */
+.education__list-wrap:last-child .education__list {
+  margin-bottom: 0;
+}
+
+/* Стили для ссылок в списке сертификаций */
+.education__cert-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+}
+
+.education__cert-link:hover {
+  text-decoration: none;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 767px) {
+  .education.section {
+    padding: 60px 0;
+  }
+  
+  .education__wrap {
+    padding: 25px;
+  }
+  
+  .education__subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .education__item {
+    padding: 10px 14px;
+  }
+}
+
+/* Информация внутри элементов */
+.education__item-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--text-dark);
+}
+
+.education__item-details {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.4;
+}
+
+.education__item-year {
+  display: inline-block;
+  background: rgba(126, 109, 246, 0.1);
+  color: var(--primary);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 4px;
+}
