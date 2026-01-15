@@ -1,7 +1,7 @@
 
 :root {
 /* Основные цвета */
-  --primary: #2563eb;           /* Ярко-синий акцент */
+  --primary:  #7e6df6;           /* Ярко-синий акцент */
   --primary-light: #3b82f6;     /* Светло-синий */
   --primary-dark: #1d4ed8;      /* Темно-синий */
   --secondary: #8b5cf6;         /* Фиолетовый (для градиентов) */
@@ -14,7 +14,7 @@
   /* Текст */
   --text-dark: #1a202c;         /* Основной текст */
   --text: #334155;              /* Обычный текст */
-  --text-light: #64748b;        /* Вторичный текст */
+  --text-light: #9e9e9e;        /* Вторичный текст */
   --text-lighter: #94a3b8;      /* Подсказки */
   
   /* Границы и разделители */
@@ -98,13 +98,21 @@ p {
 }
 
 section {
-  padding: 100px 0;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .2);
+  margin-top: 20px;
 }
 
 .section-title {
+  margin: 0;
+  padding: 15px 30px;
+  border-radius: 15px 15px 0 0;
+  font-size: 33px;
+  color: #fff;
   text-align: center;
-  margin-bottom: 1rem;
-  position: relative;
+  background-color: var(--primary);
+  padding: 30px 50px;
 }
 
 .section-subtitle {

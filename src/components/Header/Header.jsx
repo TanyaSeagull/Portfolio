@@ -20,10 +20,10 @@ function Header() {
   }
 
   const navItems = [
-    { label: 'Обо мне', href: '#about' },
-    { label: 'Проекты', href: '#projects' },
-    { label: 'Навыки', href: '#skills' },
-    { label: 'Контакты', href: '#contact' }
+    { label: 'About me', href: '#about' },
+    { label: 'Skills', href: '#skills' },
+    { label: 'Projects', href: '#projects' },
+    { label: 'Contacts', href: '#contact' }
   ]
 
   return (

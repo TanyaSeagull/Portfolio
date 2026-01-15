@@ -1,94 +1,103 @@
-.skills {
-  padding: 100px 0;
-  background: var(--bg-white);
-}
 
-.skills-grid {
-  max-width: 800px;
-  margin: 0 auto 3rem;
-}
-
-.skill-item {
-  margin-bottom: 2rem;
-}
-
-.skill-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.skill-icon {
-  color: var(--primary);
-  font-size: 1.5rem;
-  display: flex;
-  gap: 5px;
-}
-
-.skill-info {
-  display: flex;
-  justify-content: space-between;
-  flex: 1;
-  align-items: center;
-}
-
-.skill-name {
-  font-weight: 600;
-  color: var(--text-dark);
-}
-
-.skill-percent {
-  color: var(--primary);
-  font-weight: 600;
-}
-
-.skill-bar {
-  height: 10px;
-  background: var(--bg-light);
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.skill-progress {
-  height: 100%;
-  background: var(--gradient-primary);
-  border-radius: 5px;
-  transition: width 1s ease-in-out;
-}
-
-.skills-footer {
-  text-align: center;
-}
-
-.skills-tags {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.skill-tag {
-  background: var(--bg-light);
+.skills__wrap {
+  margin-bottom: 20px;
+  padding: 30px 30px 50px;
   color: var(--text);
-  padding: 8px 16px;
-  border-radius: var(--radius-sm);
-  font-size: 0.875rem;
-  font-weight: 500;
-  border: 1px solid var(--border);
-  transition: var(--transition);
+  background: var(--bg-white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
 }
 
-.skill-tag:hover {
-  border-color: var(--primary);
+/* Стили для планшета */
+@media (min-width: 768px) {
+  .skills__wrap {
+    margin-bottom: 0;
+    padding: 40px 50px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
+  }
+}
+
+/* Стили для десктопа */
+@media (min-width: 1024px) {
+  .skills__wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+  }
+}
+
+/* Заголовки групп */
+.skills__subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
   color: var(--primary);
-  transform: translateY(-2px);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(37, 99, 235, 0.1);
 }
 
-@media (max-width: 768px) {
-  .skill-info {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
+/* Список навыков */
+.skills__list {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .skills__list {
+    margin-bottom: 0;
+  }
+}
+
+/* Контейнер для каждого списка */
+.skills__list-wrap:last-child .skills__list {
+  margin-bottom: 0;
+}
+
+/* Элемент списка */
+.skills__item {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 8px 0;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.skills__item:last-child {
+  margin-bottom: 0;
+}
+
+/* Маркер как в референсе */
+.skills__item::before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin-right: 8px;
+  background-color: var(--primary);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 767px) {
+  .skills.section {
+    padding: 60px 0;
+  }
+  
+  .section__title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .skills__wrap {
+    padding: 25px;
+  }
+  
+  .skills__subtitle {
+    font-size: 1.25rem;
   }
 }
