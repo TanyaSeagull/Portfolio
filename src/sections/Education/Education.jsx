@@ -14,39 +14,28 @@ function Education() {
   // Данные для сертификаций (clickable)
   const certifications = [
     {
-      title: 'React - The Complete Guide',
-      issuer: 'Udemy',
-      year: '2023',
-      url: 'https://www.udemy.com/certificate/UC-...',
-      credentialId: 'UC-123456'
-    },
-    {
-      title: 'JavaScript Algorithms and Data Structures',
+      title: 'Responsive Wev Design',
       issuer: 'freeCodeCamp',
-      year: '2023',
-      url: 'https://www.freecodecamp.org/certification/...',
-      credentialId: 'FCC-JS-2023'
+      year: '2022',
+      url: 'https://www.freecodecamp.org/certification/tatiana_chaykina/responsive-web-design',
     },
     {
       title: 'Advanced CSS and Sass',
       issuer: 'Udemy',
       year: '2022',
-      url: 'https://www.udemy.com/certificate/UC-...',
-      credentialId: 'UC-789012'
+      url: 'https://www.udemy.com/certificate/UC-1cf436dd-c4fa-449e-9342-d7ed2b182ecf/',
     },
     {
-      title: 'Git & GitHub Masterclass',
-      issuer: 'Coursera',
-      year: '2022',
-      url: 'https://www.coursera.org/account/accomplishments/...',
-      credentialId: 'CRS-GIT-2022'
+      title: 'JavaScript Algorithms and Data Structures',
+      issuer: 'freeCodeCamp',
+      year: '2025',
+      url: 'https://www.freecodecamp.org/certification/tatiana_chaykina/javascript-algorithms-and-data-structures-v8',
     },
     {
-      title: 'Web Accessibility',
-      issuer: 'edX',
-      year: '2021',
-      url: 'https://courses.edx.org/certificates/...',
-      credentialId: 'EDX-WA-2021'
+      title: 'The Web Developer Bootcamp',
+      issuer: 'Udemy',
+      year: '2025',
+      url: 'https://www.udemy.com/certificate/UC-55763734-4e08-4166-ac73-44bc6164fefb/',
     }
   ]
 
@@ -74,7 +63,6 @@ function Education() {
                   <div>
                     <div className="education__item-title">{cert.title}</div>
                     <div className="education__item-details">{cert.issuer}</div>
-                    <div className="education__item-details">ID: {cert.credentialId}</div>
                     <span className="education__item-year">{cert.year}</span>
                   </div>
                 </li>
