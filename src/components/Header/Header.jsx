@@ -23,8 +23,7 @@ function Header() {
     { label: 'About me', href: '#about' },
     { label: 'Education', href: '#education' },
     { label: 'Skills', href: '#skills' },
-    { label: 'Projects', href: '#projects' },
-    { label: 'Contacts', href: '#contact' }
+    { label: 'Projects', href: '#projects' }
   ]
 
   return (
@@ -70,7 +69,7 @@ function Header() {
                   className="mobile-nav-link"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  На главную
+                  Main page
                 </a>
               </li>
               {navItems.map((item) => (

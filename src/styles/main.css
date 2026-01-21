@@ -7,7 +7,7 @@
   --secondary: #8b5cf6;         /* Фиолетовый (для градиентов) */
   
   /* Фоны */
-  --bg-white: #ffffff;          /* Основной фон */
+  --bg-white: #f5f1f1;          /* Основной фон */
   --bg-light: #f8fafc;          /* Фон секций */
   --bg-card: #ffffff;           /* Фон карточек */
   
@@ -57,10 +57,16 @@ html {
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   line-height: 1.6;
-  color: var(--text-dark);
-  background: var(--bg-white);
-  overflow-x: hidden;
+  position: relative;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 320px;
+  min-height: 100vh; 
+  background: url('../assets/images/main_bg.png') center / cover no-repeat fixed var(--bg-white);
+  margin: 0; 
 }
+
 
 /* ===== TYPOGRAPHY ===== */
 h1, h2, h3, h4, h5, h6 {
@@ -99,7 +105,7 @@ p {
 
 section {
   border-radius: 15px;
-  background-color: #fff;
+  background-color: var(--bg-light);
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .2);
   margin-top: 20px;
 }
