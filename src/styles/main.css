@@ -1,25 +1,25 @@
 
 :root {
 /* Основные цвета */
-  --primary:  #7e6df6;           /* Ярко-синий акцент */
-  --primary-light: #3b82f6;     /* Светло-синий */
-  --primary-dark: #1d4ed8;      /* Темно-синий */
-  --secondary: #8b5cf6;         /* Фиолетовый (для градиентов) */
+  --primary: #7e6df6;
+  --primary-light: #3b82f6;
+  --primary-dark: #1d4ed8;
+  --secondary: #8b5cf6;
   
   /* Фоны */
-  --bg-white: #f5f1f1;          /* Основной фон */
-  --bg-light: #f8fafc;          /* Фон секций */
-  --bg-card: #ffffff;           /* Фон карточек */
+  --bg-white: #ffffff;
+  --bg-light: #ffffff;
+  --bg-card: #ffffff;
   
   /* Текст */
-  --text-dark: #1a202c;         /* Основной текст */
-  --text: #334155;              /* Обычный текст */
-  --text-light: #9e9e9e;        /* Вторичный текст */
-  --text-lighter: #94a3b8;      /* Подсказки */
+  --text-dark: #1a202c;
+  --text: #334155;
+  --text-light: #9e9e9e;
+  --text-lighter: #94a3b8;
   
   /* Границы и разделители */
-  --border: #e2e8f0;           /* Границы */
-  --border-light: #f1f5f9;     /* Светлые границы */
+  --border: #e2e8f0;
+  --border-light: #f1f5f9;
   
   /* Тени */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -41,7 +41,6 @@
   /* Анимации */
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 /* ===== RESET & BASE ===== */
 * {
   margin: 0;

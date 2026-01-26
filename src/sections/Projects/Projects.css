@@ -1,4 +1,6 @@
-
+.projects {
+  padding: 40px 30px; 
+}
 /* ===== SECTION HEADER ===== */
 .section-header {
   margin-bottom: 50px;
@@ -8,7 +10,7 @@
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+  gap: 10px;
   margin-bottom: 50px;
 }
 

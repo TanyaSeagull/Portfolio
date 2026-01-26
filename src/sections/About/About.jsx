@@ -1,8 +1,7 @@
 import React from 'react'
 import './About.css'
 import { 
-  FaMapMarkerAlt, 
-  FaPhone, 
+  FaMapMarkerAlt,
   FaEnvelope,
   FaGithub,
   FaTelegram,
@@ -20,17 +19,10 @@ function About() {
       Icon: FaMapMarkerAlt
     },
     { 
-      icon: 'phone', 
-      label: 'Phone', 
-      value: '+7 (XXX) XXX-XX-XX',
-      link: 'tel:+7XXXXXXXXXX',
-      Icon: FaPhone
-    },
-    { 
       icon: 'gmail', 
       label: 'Email', 
-      value: 'your.email@example.com',
-      link: 'mailto:your.email@example.com',
+      value: 'tatiana0chaykina@gmail.com',
+      link: 'mailto:tatiana0chaykina@gmail.com',
       Icon: FaEnvelope
     },
     { 
@@ -43,15 +35,15 @@ function About() {
     { 
       icon: 'telegram', 
       label: 'Telegram', 
-      value: '@yourusername',
-      link: 'https://t.me/yourusername',
+      value: '@Tanya_Seagull',
+      link: 'https://t.me/Tanya_Seagull',
       Icon: FaTelegram
     },
     { 
       icon: 'linkedin', 
       label: 'LinkedIn', 
-      value: 'Your Name',
-      link: 'https://linkedin.com/in/yourusername',
+      value: 'Tatiana Chaykina',
+      link: 'https://linkedin.com/in/tatiana-chaikina',
       Icon: FaLinkedin
     }
   ]
@@ -83,13 +75,11 @@ function About() {
             <div className="about__inner-wrap">
               <h2 className="section__subtitle">About Me</h2>
               <p className="about__text">
-                Привет! Я Татьяна Чайкина, начинающий фронтенд разработчик. 
-                Увлечена созданием современных, интуитивно понятных веб-приложений. 
-                Ищу позицию Junior Frontend Developer, чтобы применять свои навыки 
-                в реальных проектах и развиваться в профессиональном плане.
+                Hello! I'm a junior frontend developer focused on core web technologies—React, JavaScript, HTML, and CSS.
+                I'm looking for a Junior Frontend Developer role where I can help create clean, functional interfaces, tackle meaningful challenges, and grow as a professional.
               </p>
               <a className="about__link" href="/resume.pdf" download>
-                Скачать резюме (PDF)
+                Download CV (PDF)
                 <FaDownload className="about__icon" />
               </a>
             </div>

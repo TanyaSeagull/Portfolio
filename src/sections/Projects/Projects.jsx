@@ -6,24 +6,24 @@ import './Projects.css'
 const projectsData = [
   {
     id: 1,
-    title: "Cat Energy",
-    description: "Адаптивный лендинг для магазина питания котов. Полностью валидная вёрстка с использованием методологии БЭМ.",
-    demoLink: "https://romanstashuk.github.io/cat-energy/",
-    sourceLink: "https://github.com/RomanStashuk/cat-energy"
+    title: "Yelp Camp",
+    description: "YelpCamp is a web application where users can discover, create, and review campgrounds. This project was developed as part of Colt Steele's Web Developer Bootcamp on Udemy.",
+    demoLink: "",
+    sourceLink: "https://github.com/TanyaSeagull/YelpCamp"
   },
   {
     id: 2,
-    title: "Speed Reaction Game",
-    description: "Игра на скорость реакции с таймером и системой рекордов. Реализована на чистом JavaScript.",
-    demoLink: "https://romanstashuk.github.io/reaction-time-game/",
-    sourceLink: "https://github.com/RomanStashuk/reaction-time-game/"
+    title: "Sweet time bakery",
+    description: "Landing page for home-made desserts using HTML, SCSS.",
+    demoLink: "https://tanyaseagull.github.io/Sweet-Time/",
+    sourceLink: "https://github.com/TanyaSeagull/Sweet-Time"
   },
   {
     id: 3,
-    title: "Guess a Number",
-    description: "Игра 'Угадай число' с подсказками и подсчётом попыток. Демонстрация работы с DOM и логикой игры.",
-    demoLink: "https://romanstashuk.github.io/guess-a-number/",
-    sourceLink: "https://github.com/RomanStashuk/guess-a-number/"
+    title: "A shadow Generator in RGB",
+    description: "JS shadow generator with opacity in rgb",
+    demoLink: "https://tanyaseagull.github.io/Shadow-Generator/",
+    sourceLink: "https://github.com/TanyaSeagull/Shadow-Generator"
   },
   {
     id: 4,
