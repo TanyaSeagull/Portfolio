@@ -27,10 +27,10 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Calories Counter",
-    description: "Приложение для подсчёта калорий с добавлением продуктов и расчётом дневной нормы.",
-    demoLink: "https://romanstashuk.github.io/calories-counter/",
-    sourceLink: "https://github.com/RomanStashuk/calories-counter/"
+    title: "Constructions",
+    description: "Landing page for constructions company using HTML, SCSS",
+    demoLink: "https://tanyaseagull.github.io/Constructions/",
+    sourceLink: "https://github.com/TanyaSeagull/Constructions"
   }
 ]
 
