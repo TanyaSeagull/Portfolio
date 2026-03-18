@@ -8,7 +8,7 @@ const projectsData = [
     id: 1,
     title: "Yelp Camp",
     description: "YelpCamp is a web application where users can discover, create, and review campgrounds. This project was developed as part of Colt Steele's Web Developer Bootcamp on Udemy.",
-    demoLink: "",
+    demoLink: "https://yelpcamp-demo-hwox.onrender.com",
     sourceLink: "https://github.com/TanyaSeagull/YelpCamp"
   },
   {
