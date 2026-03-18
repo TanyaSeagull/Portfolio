@@ -55,7 +55,7 @@ function About() {
           <header className="about__header">
             <div className="about__image-wrap">
               <img 
-                src="/src/assets/images/my-photo.jpg" 
+                src="/my-photo.JPG" 
                 width="280" 
                 height="300" 
                 alt="Tatiana Chaykina" 
