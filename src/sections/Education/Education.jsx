@@ -14,7 +14,7 @@ function Education() {
   // Данные для сертификаций (clickable)
   const certifications = [
     {
-      title: 'Responsive Wev Design',
+      title: 'Responsive Web Design',
       issuer: 'freeCodeCamp',
       year: '2022',
       url: 'https://www.freecodecamp.org/certification/tatiana_chaykina/responsive-web-design',
