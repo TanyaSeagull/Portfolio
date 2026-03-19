@@ -6,8 +6,7 @@ function Education() {
   const education = [
     {
       degree: 'Specialist Degree in Finance and Banking',
-      institution: 'State University of Technology, Kamchatka, Russia',
-      year: '2012'
+      institution: 'State University of Technology, Kamchatka, Russia'
     }
   ]
 

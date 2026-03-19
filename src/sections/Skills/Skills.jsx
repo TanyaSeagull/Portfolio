@@ -39,7 +39,7 @@ function Skills() {
         
         <div className="skills__wrap">
           <div className="skills__list-wrap">
-            <h3 className="skills__subtitle">Hard Skills</h3>
+            <h3 className="skills__subtitle">Technical Skills</h3>
             <ul className="skills__list">
               {hardSkills.map((skill, index) => (
                 <li key={index} className="skills__item">{skill}</li>
