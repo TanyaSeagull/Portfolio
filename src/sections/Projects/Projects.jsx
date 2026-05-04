@@ -6,27 +6,34 @@ import './Projects.css'
 const projectsData = [
   {
     id: 1,
+    title: "NeedleNet",
+    description: "NeedleNet is a React-based sewing patterns aggregator, it helps users find free sewing patterns by size and category in just a few clicks. I use a 'Web2app model', redirecting users to original creators to respect copyright.",
+    demoLink: "https://needlenet.vercel.app/",
+    sourceLink: "https://github.com/TanyaSeagull/pattern-project"
+  },
+  {
+    id: 2,
     title: "Yelp Camp",
     description: "YelpCamp is a web application where users can discover, create, and review campgrounds. This project was developed as part of Colt Steele's Web Developer Bootcamp on Udemy.",
     demoLink: "https://yelpcamp-demo-hwox.onrender.com",
     sourceLink: "https://github.com/TanyaSeagull/YelpCamp"
   },
   {
-    id: 2,
+    id: 3,
     title: "Sweet time bakery",
     description: "Landing page for home-made desserts using HTML, SCSS.",
     demoLink: "https://tanyaseagull.github.io/Sweet-Time/",
     sourceLink: "https://github.com/TanyaSeagull/Sweet-Time"
   },
   {
-    id: 3,
+    id: 4,
     title: "A shadow Generator in RGB",
     description: "JS shadow generator with opacity in rgb",
     demoLink: "https://tanyaseagull.github.io/Shadow-Generator/",
     sourceLink: "https://github.com/TanyaSeagull/Shadow-Generator"
   },
   {
-    id: 4,
+    id: 5,
     title: "Constructions",
     description: "Landing page for constructions company using HTML, SCSS",
     demoLink: "https://tanyaseagull.github.io/Constructions/",
